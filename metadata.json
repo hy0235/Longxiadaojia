@@ -1,0 +1,7 @@
+{
+  "name": "虾装宝 (ClawMaster)",
+  "description": "懂你的龙虾，更懂你的温度。专业上门安装与调优平台。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

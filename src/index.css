@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #29b6a6;
+  --color-primary-light: #e6f7f6;
+  --color-bg-gray: #f7f7f7;
+  --color-text-main: #333333;
+  --color-text-muted: #999999;
+  --color-white: #ffffff;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-gray text-text-main antialiased;
+  }
+}
+
+.service-card {
+  @apply bg-white border border-gray-100 rounded-xl shadow-sm;
+}
+
+.primary-button {
+  @apply bg-primary-green text-white rounded-full font-medium transition-all active:scale-95;
+}
+
+.text-primary {
+  @apply text-primary-green;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-bg-gray;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-green/20 rounded-full hover:bg-primary-green/40 transition-colors;
+}
